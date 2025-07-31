@@ -1,0 +1,27 @@
+html, body {
+            margin: 0;
+            font-family: 'Inter', sans-serif; 
+            background-color: #f4f6f8;
+            overflow-x: hidden; 
+            min-height: 100vh; /* Memastikan html dan body mengambil tinggi penuh viewport */
+        }
+        .puller {
+            width: 30px;
+            height: 4px;
+            background-color: #ccc;
+            border-radius: 3px;
+            position: absolute;
+            top: 8px;
+            left: calc(50% - 15px);
+        }
+        section {
+            padding-top: 64px; 
+            padding-bottom: 64px; 
+        }
+        .modal-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            display: block; 
+            margin-bottom: 16px; 
+        }
