@@ -174,7 +174,7 @@ Salam sejahtera bagi kita semuanya,Om Swastiastu,Namo Buddhaya,Salam kebajikan<b
                 { 
                     id: 'smp', 
                     name: 'SMPN 30 BEKASI', 
-                    image: 'https://raw.githubusercontent.com/achmadfirdaus73/Daus/refs/heads/main/images%20(3).jpeg', 
+                    image: 'https://raw.githubusercontent.com/achmadfirdaus73/AchmadFirdaus/refs/heads/main/images%20(5).jpeg', 
                     locationUrl: 'https://maps.app.goo.gl/98JJfLM1neZyeFpk9?g_st=a', // Diisi dengan URL yang Anda berikan
                     description: 'Di SMPN 30 Bekasi, saya mengembangkan minat dalam berbagai mata pelajaran dan aktif dalam kegiatan ekstrakurikuler.'
                 }, 
