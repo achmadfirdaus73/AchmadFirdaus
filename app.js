@@ -167,7 +167,7 @@ Salam sejahtera bagi kita semuanya,Om Swastiastu,Namo Buddhaya,Salam kebajikan<b
                 { 
                     id: 'sd', 
                     name: 'SDN JATIRASA 1', 
-                    image: 'https://raw.githubusercontent.com/achmadfirdaus73/Daus/refs/heads/main/images%20(2).jpeg', 
+                    image: 'https://raw.githubusercontent.com/achmadfirdaus73/AchmadFirdaus/refs/heads/main/images%20(4).jpeg', 
                     locationUrl: 'https://maps.app.goo.gl/qfkMFVT2xapwJXM69?g_st=a', // Diisi dengan URL yang Anda berikan
                     description: 'Sekolah Dasar Negeri Jatirasa 1 adalah tempat saya memulai pendidikan formal, membangun dasar-dasar pengetahuan dan keterampilan sosial.'
                 }, 
