@@ -1,5 +1,4 @@
-    // Popup Modal
-    $('#lihatDataBtn').on('click', function(){
+$('#lihatDataBtn').on('click', function(){
       $('#dataModal').modal('show');
     });
 
