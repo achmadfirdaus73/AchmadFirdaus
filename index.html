@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/echarts-gl/dist/echarts-gl.min.js"></script>
     
 
 </head>
@@ -21,7 +23,7 @@
   </div>
 
   <!-- Tentang Saya -->
-  <section id="tentang">
+  <section id="tentang" class="card1" >
     <div class="ui container">
       <h2 class="ui header">Tentang Saya</h2>
       <h3>Misi</h3>
@@ -33,7 +35,7 @@ Membangun karier yang berintegritas dan profesional dengan terus mengembangkan k
   </section>
 
   <!-- Pendidikan -->
-  <section id="pendidikan">
+  <section id="pendidikan" class="card-deep" >
     <div class="ui container">
       <h2 class="ui header">Pendidikan</h2>
       <ul class="ui list">
@@ -45,7 +47,7 @@ Membangun karier yang berintegritas dan profesional dengan terus mengembangkan k
   </section>
 
   <!-- Pengalaman Kerja -->
-  <section id="pengalaman">
+  <section id="pengalaman" class="card2">
     <div class="ui container">
       <h2 class="ui header">Pengalaman Kerja</h2>
       <div class="ui segment">
@@ -55,7 +57,7 @@ Membangun karier yang berintegritas dan profesional dengan terus mengembangkan k
       </div>
       <div class="ui segment">
         <h4>Foodcourt Revo Town | Waiters | 2015-2016</h4>
-        <p>Menyapa pelanggan dengan salam senyum sapa dan bertanya untuk pemesanannya ,mengantarkan makanan yang dipesan,kadang pula memegang kasir ketika kasir sedang cuti.</p>
+        <p>Membuat desain aplikasi mobile dengan pendekatan design thinking.</p>
       </div>
     <div class="ui segment">
         <h4>PT Topro Indonesia | Operator Produksi | 2016-2020</h4>
@@ -70,18 +72,16 @@ Membangun karier yang berintegritas dan profesional dengan terus mengembangkan k
   </section>
 
   <!-- Skill -->
-  <section id="skill">
-    <div class="ui container">
-      <h2 class="ui header">Skill</h2>
-      <canvas id="skillChart" height="120"></canvas>
-    </div>
+   <section id="skills" class="card">
+    <h2><i class="bi bi-bar-chart"></i> KEAHLIAN</h2>
+    <div id="chart"></div>
   </section>
 
   <!-- Project -->
-  <section id="project">
+  <section id="project" >
     <div class="ui container">
       <h2 class="ui header">Project</h2>
-      <div class="ui two stackable cards">
+      <div class="ui four stackable cards">
         <div class="ui card project-card">
           <div class="image">
             <img src="https://res.cloudinary.com/dzx3qf4zy/image/upload/v1756667443/IMG_20250901_015743_gyiuyv.jpg" alt="Project 1">
@@ -130,22 +130,23 @@ Membangun karier yang berintegritas dan profesional dengan terus mengembangkan k
       </div>
     </div>
   </section>
-     <section id="Kontak">
+     <section id="Kontak" >
     <div class="ui container">
       <h2 class="ui header">Kontak Saya</h2>
       <ul class="ui list">
-        <li>WhatsApp : <a>085691009132</a></li>
-        <li>Email :<a> achmadfirdaus0910@gmail.com</a></li>
+        <li>Whatsapp:<a href="https://wa.me/+6285691009132">085691009132</a></li>
+        <li>Email :<a href="mailto:achmadfirdaus0910@gmail.com"> achmadfirdaus0910@gmail.com</a></li>
       </ul>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer>
+  <footer >
     <p>© 2025 Achmad Firdaus. All Rights Reserved.</p>
   </footer>
 
   <!-- Popup Data Saya -->
+  
   <div class="ui modal" id="dataModal">
     <i class="close icon"></i>
     <div class="header">Data Saya</div>
@@ -169,5 +170,5 @@ Membangun karier yang berintegritas dan profesional dengan terus mengembangkan k
 
   </script>
 </body>
-</html>
-
+        </html>
+          
