@@ -1,174 +1,45 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portofolio Saya</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <link rel="stylesheet" href="style.css">
-  <script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/echarts-gl/dist/echarts-gl.min.js"></script>
-    
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portofolio Achmad Firdaus | Web & Mobile Developer</title>
+<meta name="description" content="Portofolio Achmad Firdaus - Web & Mobile Developer. Lihat proyek, skill, pengalaman kerja, dan kontak.">
+<meta name="keywords" content="Achmad Firdaus, Portofolio, Portofolio pekerja, Pembuatan portofolio web, Web Developer, Mobile Developer">
+<meta name="author" content="Achmad Firdaus">
+<meta name="robots" content="index, follow">
 
+<!-- Material UI & Babel -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+<script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/@mui/material@5.0.0-rc.0/umd/material-ui.development.js"></script>
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Achmad Firdaus",
+  "url": "https://www.achmadfirdaus.my.id/",
+  "image": "https://www.achmadfirdaus.my.id/Achmadfirdaus.jpg",
+  "jobTitle": "Web & Mobile Developer",
+  "sameAs": [
+    "https://www.linkedin.com/in/achmadfirdaus",
+    "https://github.com/achmadfirdaus73",
+    "https://instagram.com/achmadfirdausssss"
+  ]
+}
+</script>
+
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div id="root"></div>
 
-  <!-- Bagian Atas -->
-  <div class="hero">
-    <img src="https://raw.githubusercontent.com/achmadfirdaus73/Daus/refs/heads/main/IMG-20250805-WA0063.jpg" alt="Profile">
-    <h1>ACHMAD FIRDAUS</h1>
-    <p>COLLECTION | DATA ENTRY | MARKETING | WMS | WEB</p>
-    <button class="ui teal button" id="lihatDataBtn">Lihat Data Saya</button>
-  </div>
-
-  <!-- Tentang Saya -->
-  <section id="tentang" class="card1" >
-    <div class="ui container">
-      <h2 class="ui header">Tentang Saya</h2>
-      <h3>Misi</h3>
-      <p>
-Membangun karier yang berintegritas dan profesional dengan terus mengembangkan keterampilan di bidang pekerjaan yang saya tekuni, memberikan solusi yang bermanfaat, serta berkontribusi positif bagi perusahaan maupun lingkungan kerja.</p>
-<h3>Visi</h3>
-<p>Menjadi seorang pekerja yang inovatif, adaptif, dan mampu menghadirkan nilai tambah dalam setiap proyek maupun tantangan yang dihadapi.</p>
-    </div>
-  </section>
-
-  <!-- Pendidikan -->
-  <section id="pendidikan" class="card3" >
-    <div class="ui container">
-      <h2 class="ui header">Pendidikan</h2>
-      <ul class="ui list">
-        <li>SDN JATIRASA 1</li>
-        <li>SMPN 30 BEKASI</li>
-        <li>SMK TRISAKA BEKASI</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Pengalaman Kerja -->
-  <section id="pengalaman" class="card2">
-    <div class="ui container">
-      <h2 class="ui header">Pengalaman Kerja</h2>
-      <div class="ui segment">
-        <h4>CV Faradina Abadi Mulia | PKL | 2014</h4>
-        <p>Membuat entry data barang keluar masuk gudang,stok opname mengatur tata letak barang laporan barang
-        </p>
-      </div>
-      <div class="ui segment">
-        <h4>Foodcourt Revo Town | Waiters | 2015-2016</h4>
-        <p>Menyapa dan menyambut pelanggan memberika menu makanan atau minuman,mengantarkan makan atau minuman yang dipesan kadang juga menggantikan kasir ketika sedang cuti</p>
-      </div>
-    <div class="ui segment">
-        <h4>PT Topro Indonesia | Operator Produksi | 2016-2020</h4>
-        <p>Membuat produksi outsole sepatu,mulai dari tahap bahan sampe bentuk outsole dengan menyeting mesin injection sistem komputer temperatur panas dan tekanan pas agar sesuai produksi dan memang juga menyeting mold .</p>
-    </div>
-        <div class="ui segment">
-        <h4>PT Gemilang Jaya Bekasi | Field Collection | 2021-2025</h4>
-        <p>Menagih angsuran konsumen sesuai jumlah harga barang yang diangsur konsumen,menyetor uang hasil tagihan ke kantor sesuai dengan jumlah total tagihan</p>
-    </div>
-    
-  </div>
-  </section>
-
-  <!-- Skill -->
-   <section id="skills" class="card">
-    <h2><i class="bi bi-bar-chart"></i> KEAHLIAN</h2>
-    <div id="chart"></div>
-  </section>
-
-  <!-- Project -->
-  <section id="project" class="card4" >
-    <div class="ui container">
-      <h2 class="ui header">Project</h2>
-      <div class="ui four stackable cards">
-        <div class="ui card project-card">
-          <div class="image">
-            <img src="https://res.cloudinary.com/dzx3qf4zy/image/upload/v1756667443/IMG_20250901_015743_gyiuyv.jpg" alt="Project 1">
-          </div>
-          <div class="content">
-            <div class="header">Web ecomerce umkm angsuran</div>
-            <div class="description">
-              web mobile yang saya rancang dengan menggunakan firebase sebagai data base dan sekaligus backend dengan fitur pembelian pensanan barang yang terintegrasi langsung oleh admin dan kolektor
-            </div>
-          </div>
-        </div>
-        <div class="ui card project-card">
-          <div class="image">
-            <img src="https://res.cloudinary.com/dzx3qf4zy/image/upload/v1756667360/IMG_20250901_015734_ipy7ua.jpg" alt="Project 2">
-          </div>
-          <div class="content">
-            <div class="header">Web kasir
-            </div>
-            <div class="description">
-              Web pos kasir yang teritegrasi langsung oleh cloud dinary sebagai gambar dan sistem firebase
-            </div>
-          </div>
-        </div>
-        <div class="ui card project-card">
-          <div class="image">
-            <img src="https://res.cloudinary.com/dzx3qf4zy/image/upload/v1756667359/IMG_20250901_015717_czwkbt.jpg" alt="Project 3">
-          </div>
-          <div class="content">
-            <div class="header">Inventory sistem gudang</div>
-            <div class="description">
-              Berdasarkan pengalaman kerja pkl saya saya membuat sistem erp untuk pengelolaan gudang agar lebih efisien dan terukur.
-            </div>
-          </div>
-        </div>
-        <div class="ui card project-card">
-  <div class="image">
-    <img src="https://res.cloudinary.com/dzx3qf4zy/image/upload/v1756668339/IMG_20250901_022441_fhnifw.jpg" alt="Project 4">
-  </div>
-  <div class="content">
-    <div class="header">SQL
-    </div>
-    <div class="description">
-      Entry database with sql atau membuat table di database oracle,mysql, PostgreSql,Dan lainlain
-    </div>
-  </div>
-      </div>
-    </div>
-  </section>
-     <section id="Kontak" >
-    <div class="ui container">
-      <h2 class="ui header">Kontak Saya</h2>
-      <ul class="ui list">
-        <li>Whatsapp:<a href="https://wa.me/+6285691009132">085691009132</a></li>
-        <li>Email :<a href="mailto:achmadfirdaus0910@gmail.com"> achmadfirdaus0910@gmail.com</a></li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer >
-    <p>© 2025 Achmad Firdaus. All Rights Reserved.</p>
-  </footer>
-
-  <!-- Popup Data Saya -->
-  
-  <div class="ui modal" id="dataModal">
-    <i class="close icon"></i>
-    <div class="header">Data Saya</div>
-    <div class="content">
-      <p><strong>Nama:</strong> ACHMAD FIRDAUS</p>
-      <p><strong>Jenis Kelamin:</strong> Laki-laki</p>
-      <p><strong>TTL:</strong> BEKASI, 10 September 1996</p>
-            <p><strong>Jurusan:</strong> Teknik Kendaraan Ringan</p>
-      <p><strong>Status:</strong> Belum Menikah</p>
-      <p><strong>Alamat:</strong> Kampung pondok benda ,gang kuncir no 48 RT 05/02 kelurahan-Jatirasa Kecamatan-Jatiasih Kota Bekasi 17424</p>
-      <p><strong>Kewarganegaraan:</strong> INDONESIA</p>
-      <p><strong>Agama:</strong> ISLAM</p>
-      <p><strong>Hobi:</strong> Coding, Belajar hal hal baru, Traveling</p>
-    </div>
-  </div>
-  
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
-  <script src="app.js">
-
-  </script>
+<script type="text/babel" src="app.js">
+</script>
 </body>
-        </html>
-          
+</html>
