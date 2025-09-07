@@ -1,106 +1,56 @@
-body {
-      background: #f4f6f8;
-      font-family: 'Segoe UI', sans-serif;
-      padding-bottom: 60px;
-    }
-    #skillChart {
-  width: 100% !important;
-  max-width: 100%;   /* biar gak terlalu panjang */
-  height: 800px !important; /* tinggi pas */
-  margin: 0 auto; /* center */
-}
+body { margin:0; font-family:'Roboto',sans-serif; background:linear-gradient(135deg,#1e3c72,#2a5298); color:white; overflow-x:hidden; }
+.container { padding:40px 20px; max-width:1200px; margin:auto; }
+.card-hover { transition: transform 0.3s, box-shadow 0.3s; }
+.card-hover:hover { transform: translateY(-8px); box-shadow:0 10px 20px rgba(0,0,0,0.3); }
 
-.hero {
-      text-align: center;
-      padding: 100px 20px;
-      background: linear-gradient(135deg, #FFFFFF, #FFF6F0);
-      color: Black;
-      min-height: 85vh;
-      font-size: 20px;
-      font-family: Courier New;
-      
-    }
-    .hero img {
-      width: 50%;
-      height: 50%;
-      border-radius: 50%;
-      border: 4px solid white;
-      margin-bottom: 20px;
-    }
-    section {
-      padding: 100px 5px;
-      /* kasih jarak lebih jauh antar div */
-    }
-    footer {
-      background: #1b1c1d;
-      color: #FFFFFF;
-      text-align: center;
-      padding: 20px;
-      margin-top: 80px;
-    }
-    .project-card {
-      cursor: pointer;
-      transition: transform 0.1s;
-    }
-    .project-card:hover {
-      transform: scale(1.1);
-      z-index: 50;
-    }
-.card {
-  background: rgba(0, 0, 0, 1);
-  border-radius: 1px;
-  padding: 2rem;
-  margin-bottom: 1rem;
-  margin-top: 1rem;
-  margin-left: 10px;
-  margin-right: 10px;
-  box-shadow: 0 50px 25px rgba(101, 98, 98, 1);
-  color: white;
-}
-.card1{
-  background: rgba(255, 254, 254, 1);
-  border-radius: 1px;
-  padding: 2rem;
-  margin-bottom: 50px;
-  margin-top: 1rem;
-  margin-left: 10px;
-  margin-right: 10px;
-  box-shadow: 0 50px 25px rgba(101, 98, 98, 1);
-}
+/* Profile Section */
+.profile-section { display:flex; justify-content:center; align-items:center; gap:20px; flex-wrap:wrap; margin-bottom:40px; }
+.profile-card { flex:1; max-width:280px; min-width:200px; text-align:center; }
+.profile-pic { width:120px; height:120px; border-radius:50%; border:4px solid white; object-fit:cover; box-shadow:0 4px 15px rgba(0,0,0,0.3); }
 
-.card2{
-  background: rgba(255, 254, 254, 1);
-  border-radius: 1px;
-  padding: 2rem;
-  margin-bottom: 50px;
-  margin-top: 37px;
-  margin-left: 10px;
-  margin-right: 10px;
-  box-shadow: 0 50px 25px rgba(101, 98, 98, 1);
-}
-.card3{
-  background: rgba(255, 254, 254, 1);
-  border-radius: 1px;
-  padding: 2rem;
-  margin-bottom: 50px;
-  margin-top: 37px;
-  margin-left: 10px;
-  margin-right: 10px;
-  box-shadow: 0 50px 25px rgba(101, 98, 98, 1);
-}
-.card4{
-  background: rgba(255, 254, 254, 1);
-  border-radius: 1px;
-  padding: 2rem;
-  margin-bottom: 50px;
-  margin-top: 37px;
-  margin-left: 10px;
-  margin-right: 10px;
-  box-shadow: 0 50px 25px rgba(101, 98, 98, 1);
-}
+/* Dot decoration */
+.dot-line { display:flex; justify-content:center; gap:12px; margin:30px 0 15px; }
+.dot-line span { width:12px; height:12px; background:#1976d2; border-radius:50%; box-shadow:0 2px 6px rgba(0,0,0,0.2); }
 
+/* Icon Row */
+.icon-row { display:flex; justify-content:center; gap:30px; flex-wrap:wrap; }
+.icon-button { display:flex; flex-direction:column; align-items:center; color:white; text-decoration:none; font-size:0.8rem; line-height:1; cursor:pointer; transition: transform 0.2s; }
+.icon-button:hover { transform: translateY(-5px); }
+.icon-button .material-icons { font-size:36px; margin:0; }
 
-  #chart {
-  width: 100%;
-  height: 400px;
-  }
+/* Project iframe */
+iframe { width:100%; height:260px; border:none; }
+
+/* Keahlian Chart */
+#skillsChart { background: rgba(0,0,0,0.1); border-radius:12px; padding:10px; }
+
+/* Pesan / Text bebas */
+.message-section { margin-top:40px; line-height:1.6; }
+
+/* Footer */
+footer { text-align:center; margin-top:40px; padding:20px; border-top:1px solid white; }
+
+/* Glass Card Sosial Media */
+.social-card {
+  margin:40px auto;
+  padding:20px;
+  max-width:600px;
+  display:flex;
+  justify-content:space-around;
+  backdrop-filter: blur(10px);
+  background: rgba(255,255,255,0.1);
+  border-radius:16px;
+  border:1px solid rgba(255,255,255,0.2);
+  flex-wrap:wrap;
+}
+.social-card a {
+  text-decoration:none;
+  font-weight:bold;
+  font-size:1rem;
+  margin:5px 10px;
+}
+.social-link-linkedin { color:#0e76a8; }
+.social-link-instagram { color:#f77737; }
+.social-link-wa { color:#25d366; }
+.social-link-email { color:#fdd835; }
+.social-link-github { color:#333; }
